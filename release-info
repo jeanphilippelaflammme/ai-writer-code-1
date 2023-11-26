@@ -1,0 +1,63 @@
+Arch Linux Downloads
+Release Info
+The image can be burned to a CD, mounted as an ISO file, or be directly written to a USB flash drive. 
+It is intended for new installations only; an existing Arch Linux system can always be updated with pacman -Syu.
+
+Current Release: 2023.11.01
+Included Kernel: 6.5.9
+ISO Size: 807.3 MB
+Installation Guide
+Resources:
+Issue tracker
+Mailing List
+Existing Arch Users
+If you are an existing Arch user, 
+there is no need to download a new ISO to update your existing system. You may be looking for an updated mirrorlist instead.
+
+BitTorrent Download (recommended)
+If you can spare the bytes, please leave the client open after your download is finished, so you can seed it back to others.
+A DHT capable client is required. A WebSeed capable client is recommended for fastest download speeds.
+
+Magnet link for 2023.11.01 
+Torrent for 2023.11.01
+Netboot
+If you have a wired connection,
+you can boot the latest release directly over the network.
+
+Arch Linux Netboot
+Vagrant images
+Vagrant images for libvirt and virtualbox are available on the Vagrant Cloud. 
+You can bootstrap the image with the following commands:
+
+vagrant init archlinux/archlinux
+vagrant up
+Docker image
+The official Docker image is available on Docker Hub. You can run the image with the following command:
+
+docker run -it archlinux
+VM images
+Official virtual machine images are available for download on our GitLab instance, more information is available in the README.
+
+HTTP Direct Downloads
+In addition to the BitTorrent links above, install images can also be downloaded via HTTP from the mirror sites listed below. 
+Please ensure the download image matches the checksum from the sha256sums.txt or b2sums.txt file in the same directory as the image.
+
+b2sum -c b2sums.txt
+
+The release signing key can be downloaded with WKD:
+
+sq wkd get pierre@archlinux.org -o release-key.pgp
+
+With this key the signature can be verified like this:
+
+sq verify --signer-file release-key.pgp --detached archlinux-2023.11.01-x86_64.iso.sig archlinux-2023.11.01-x86_64.iso
+
+Checksums
+File integrity checksums for the latest releases can be found below:
+
+ISO PGP signature
+Bootstrap tarball PGP signature
+PGP fingerprint: 0x54449A5C
+WKD Lookup: gpg --auto-key-locate clear,wkd -v --locate-external-key pierre@archlinux.org
+SHA256: 477f50617d648e46d6e326549aa56ab92115a29a97f2ca364e944cea06970608
+BLAKE2b: ef0f93fc0523abe61939d55386cdc8353dc506aa62335c1009477abf9a0fb3b068d40dc5fc8dd8be0d3e9d09cebcd012e70914196da670a53ad86356997cddea
