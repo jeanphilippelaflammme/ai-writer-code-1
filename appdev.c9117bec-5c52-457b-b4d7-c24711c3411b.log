@@ -1,0 +1,22 @@
+2023-11-12T03:27:45.720677Z	Cloning repository...
+2023-11-12T03:27:46.526008Z	From https://github.com/hackergamingjp/appdev
+2023-11-12T03:27:46.526662Z	 * branch            2779bbacbbc5bd55ca6b7c88e8b4658d1723f522 -> FETCH_HEAD
+2023-11-12T03:27:46.52685Z	
+2023-11-12T03:27:46.566459Z	HEAD is now at 2779bba Initial commit
+2023-11-12T03:27:46.567345Z	
+2023-11-12T03:27:46.671748Z	
+2023-11-12T03:27:46.70482Z	Success: Finished cloning repository files
+2023-11-12T03:27:47.513587Z	Detected the following tools from environment: 
+2023-11-12T03:27:47.514766Z	Executing user command: npm run build
+2023-11-12T03:27:48.492178Z	npm ERR! code ENOENT
+2023-11-12T03:27:48.5043Z	npm ERR! syscall open
+2023-11-12T03:27:48.504579Z	npm ERR! path /opt/buildhome/repo/package.json
+2023-11-12T03:27:48.504752Z	npm ERR! errno -2
+2023-11-12T03:27:48.50492Z	npm ERR! enoent ENOENT: no such file or directory, open '/opt/buildhome/repo/package.json'
+2023-11-12T03:27:48.505095Z	npm ERR! enoent This is related to npm not being able to find a file.
+2023-11-12T03:27:48.505268Z	npm ERR! enoent 
+2023-11-12T03:27:48.505433Z	
+2023-11-12T03:27:48.505596Z	npm ERR! A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2023-11-12T03_27_48_413Z-debug-0.log
+2023-11-12T03:27:48.510818Z	Failed: Error while executing user command. Exited with error code: 254
+2023-11-12T03:27:48.5186Z	Failed: build command exited with code: 1
+2023-11-12T03:27:49.408266Z	Failed: error occurred while running build command
